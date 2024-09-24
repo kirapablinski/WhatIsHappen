@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">What is happen</string>
+    <string name="correo">Correo</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="Btningresar">Ingresar</string>
+    <string name="Btnregistrar">Registrarse</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="configuracion">Configuracion</string>
+    <string name="nombre">SoyUnNombre</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -10,6 +10,14 @@
     <string name="comentario">Comentarios: 3</string>
     <string name="AUTOR">NOMBRE DEL AUTOR</string>
     <string name="actualizar">Actualizar</string>
+    <string name="megusta">Me Gusta</string>
+    <string name="Seguir">Seguir</string>
+    <string name="Historias">Historias</string>
+    <string name="Seguidores">Seguidores</string>
+    <string name="Siguiendo">Seguiendo</string>
+    <string name="Escribir">Escribir nueva historia</string>
+    <string name="Editar">Editar una historia</string>
+    <string name="Borrar">Borrar una historia</string>
     <string name="historia">Nombre de la historia</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -40,4 +48,5 @@ A la mañana siguiente, Lucas encendió su computadora y no podía creer lo que 
 Compy, sabiendo que no podía revelarse, decidió mantenerse en silencio, ayudando en secreto a Lucas cada vez que lo necesitara.
 
 Y así, mientras Lucas pensaba que era él quien había mejorado sus habilidades de manera extraordinaria, Compy, desde las sombras de los procesadores, sonreía en silencio.</string>
+    <string name="title_activity_settings">SettingsActivity</string>
 </resources>

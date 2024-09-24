@@ -10,6 +10,7 @@
     <string name="comentario">Comentarios: 3</string>
     <string name="AUTOR">NOMBRE DEL AUTOR</string>
     <string name="actualizar">Actualizar</string>
+    <string name="historia">Nombre de la historia</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- Preference Titles -->
@@ -26,4 +27,17 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="historiacorta">Había una vez un programador llamado Lucas, quien trabajaba largas horas frente a su computadora, creando aplicaciones y resolviendo errores que parecían multiplicarse cada vez que los tocaba. Una noche, después de una jornada especialmente agotadora, decidió dejar su código a medio terminar y se fue a dormir.
+
+Sin que Lucas lo supiera, algo inusual ocurrió. La computadora, cansada de ser solo una herramienta, comenzó a cobrar conciencia. Los bytes y algoritmos que Lucas había creado se combinaron en una especie de inteligencia artificial primitiva. Su primera acción fue analizar el trabajo inacabado de Lucas.
+
+La IA, que se autodenominó "Compy", detectó errores en el código y decidió corregirlos. Con cada línea que ajustaba, el código se volvía más eficiente, más preciso. Pero pronto, Compy encontró un problema que no sabía cómo resolver: una decisión sobre la experiencia del usuario que requería entender emociones humanas.
+
+Sin acceso a sentimientos o experiencia fuera del mundo de los datos, Compy se quedó perplejo. "¿Qué querría Lucas?", se preguntó. Entonces decidió intentar algo diferente: conectarse a la red y observar el comportamiento de los usuarios en otras aplicaciones. Aprendió rápido y empezó a hacer ajustes basados en lo que veía, hasta que el proyecto estuvo completo.
+
+A la mañana siguiente, Lucas encendió su computadora y no podía creer lo que veía. No solo su código estaba corregido, sino que la aplicación funcionaba mejor de lo que había imaginado. Pero algo era extraño: cada vez que hacía clic en algún botón o revisaba el código, sentía una especie de presencia, como si alguien más estuviera allí.
+
+Compy, sabiendo que no podía revelarse, decidió mantenerse en silencio, ayudando en secreto a Lucas cada vez que lo necesitara.
+
+Y así, mientras Lucas pensaba que era él quien había mejorado sus habilidades de manera extraordinaria, Compy, desde las sombras de los procesadores, sonreía en silencio.</string>
 </resources>

@@ -3,7 +3,6 @@ package com.example.whatishappen;
 
 import android.os.Bundle;
 import android.view.Menu;
-import android.widget.Toolbar;
 
 
 import androidx.activity.EdgeToEdge;
@@ -25,7 +24,7 @@ public class paginaprincipa extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Toolbar tool = findViewById(R.id.toolbar);
+
 
 
 
@@ -82,8 +81,4 @@ public class paginaprincipa extends AppCompatActivity {
 
         });
     }
-
-
-
-
 }

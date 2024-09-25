@@ -60,16 +60,16 @@ public class Biblioteca extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         View view = inflater.inflate(R.layout.fragment_biblioteca, container, false);
 
         ImageView miImagen = view.findViewById(R.id.imagen1);
 
-        // Configura el listener para la imagen
+
         miImagen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Inicia la nueva Activity
+
                 Intent intent = new Intent(getActivity(), Lectura.class);
                 startActivity(intent);
             }

@@ -6,53 +6,80 @@
     android:layout_height="match_parent"
     tools:context=".Inicio">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="95dp"
-            android:layout_height="95dp"
-            android:src="@drawable/png"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" /><![CDATA[
 
-        android:text="texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno "
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        android:clickable="false"
+        android:padding="16dp">
 
-        ]]>
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="155dp"
-            android:layout_height="95dp"
-            android:text="@string/AUTOR"
-            android:textSize="20sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="395dp"
-            android:layout_height="180dp"
-            android:text="texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno v texto de relleno "
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
+        <!-- Contenedor principal -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/comentario"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView5" />
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            android:orientation="vertical">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <!-- Cabecera con imagen de perfil y nombre -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <!-- Imagen de perfil -->
+                <ImageView
+                    android:id="@+id/author_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/png" />
+
+                <!-- Nombre del autor -->
+                <TextView
+                    android:id="@+id/author_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/AUTOR"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Texto del contenido -->
+            <TextView
+                android:id="@+id/cliqueame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:clickable="false"
+                android:lineSpacingExtra="4dp"
+                android:text="Texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno texto de relleno..."
+                android:textSize="16sp" />
+
+            <!-- Sección de comentarios -->
+            <Button
+                android:id="@+id/cliquea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VER" />
+
+            <TextView
+                android:id="@+id/comments_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comentario"
+                android:textColor="#888888"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
 
 </FrameLayout>

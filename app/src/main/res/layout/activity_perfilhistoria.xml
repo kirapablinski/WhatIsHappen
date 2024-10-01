@@ -21,24 +21,117 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="212dp"
-        android:layout_height="257dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginEnd="4dp"
+        android:layout_width="0dp"
+        android:layout_height="671dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
 
-        <TextView
-            android:id="@+id/textView24"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:textSize="30sp"
-            android:text="aqui deberia ir una caratula de una historia, si tuviera una :ccccccccccc"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Imagen de la portada -->
+                <ImageView
+                    android:id="@+id/story_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_dialog_alert"
+                    app:srcCompat="@android:drawable/ic_dialog_alert" />
+
+                <!-- Título de la historia -->
+                <TextView
+                    android:id="@+id/story_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Título de la Historia"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <!-- Nombre del autor -->
+                <TextView
+                    android:id="@+id/story_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Autor: Nombre del Autor"
+                    android:textColor="#888888"
+                    android:textSize="16sp" />
+
+                <!-- Sinopsis -->
+                <TextView
+                    android:id="@+id/story_synopsis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:text="Esta es la sinopsis de la historia. Aquí se describe de qué trata la historia, capturando la atención del lector."
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <!-- Etiquetas o géneros -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:padding="8dp"
+                        android:text="#Romance"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="#Fantasía"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <!-- Botones de acción (Leer, Añadir a biblioteca) -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_read"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:backgroundTint="#3F51B5"
+                        android:padding="12dp"
+                        android:text="Leer"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/btn_add_library"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#FF9800"
+                        android:padding="12dp"
+                        android:text="Añadir a biblioteca"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
